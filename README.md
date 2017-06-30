@@ -1,5 +1,7 @@
 # 使用UITextView封装聊天界面的输入框(占位文字、高度自适应、不用操心键盘的弹出与收回时更新Frame、字数限制以及按钮灵活配置)
 
+#简书地址：http://www.jianshu.com/p/757ccec0b58f
+
 1.注意命名要求，@"leftImageName" 高亮则为：@"leftImageName_pre" 目的是为了少传几个参数。若传nil,则表示隐藏该按钮\<br>
 2.placeString 占位文字\<br>
 3.限制 字符数 为-1，则表示 没有限制\<br>
