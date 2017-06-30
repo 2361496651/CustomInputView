@@ -27,12 +27,12 @@ CGFloat screenW = [UIScreen mainScreen].bounds.size.width;\<br>
 CGFloat screenH = [UIScreen mainScreen].bounds.size.height;\<br>
 
 
-        self.inputView = [DifferInputView InputViewWithFrame:CGRectMake(0, screenH - 44, screenW, 44) placeHolder:@"说点什么吧..." limitLength:100 leftImage:@"icon_like_down" middleImage:@"icon_like_down" rightImage:@"icon_like_down" buttonClickBlock:^(NSInteger index) {
-        NSLog(@"%ld",index);
-        // index 0:点击了左边的按钮，即使左边的图片传空，不显示左边的按钮，index为0也表示点击了左边的按钮，一次内推，1表示点击了中间的按钮，2表示点击了右边的按钮
-        } returnClick:^(NSString *result) {
-        NSLog(@"%@",result);
-        self.textResult.text = result;
+        self.inputView = [DifferInputView InputViewWithFrame:CGRectMake(0, screenH - 44, screenW, 44) placeHolder:@"说点什么吧..." limitLength:100 leftImage:@"icon_like_down" middleImage:@"icon_like_down" rightImage:@"icon_like_down" buttonClickBlock:^(NSInteger index) {\<br>
+        NSLog(@"%ld",index);\<br>
+        // index 0:点击了左边的按钮，即使左边的图片传空，不显示左边的按钮，index为0也表示点击了左边的按钮，一次内推，1表示点击了中间的按钮，2表示点击了右边的按钮\<br>
+        } returnClick:^(NSString *result) {\<br>
+        NSLog(@"%@",result);\<br>
+        self.textResult.text = result;\<br>
         }];
 
 
