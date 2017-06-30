@@ -139,6 +139,7 @@
 }
 
 
+
 #pragma mark:UITextViewDelegate
 - (void)textViewDidChange:(UITextView *)textView
 {
@@ -200,6 +201,7 @@
 
 }
 
+
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
 {
     if ([text isEqualToString:@"\n"]) {//判断输入的字是否是回车，即按下return
@@ -212,6 +214,7 @@
     
     return YES;
 }
+
 
 - (void)setCurrentLimitLength:(NSInteger)lenght
 {
