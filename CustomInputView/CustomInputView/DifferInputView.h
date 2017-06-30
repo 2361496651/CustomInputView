@@ -25,9 +25,11 @@ typedef void(^ReturnClickBlock)(NSString *result);
 //获取 textview输入的内容，有时不一定在return时获取到
 @property (nonatomic,copy)NSString *result;
 
+
 //设置当前输入的限制字符数，默认 限制字符由上面的的类方法决定。
 //注意：先调用 下面的becomeFirstResponderWithPlaceString：方法，是当前控件成为第一响应者，再调用这个方法来限制字符数
 - (void)setCurrentLimitLength:(NSInteger)lenght;
+
 
 //成为第一响应者，占位文字，若传 nil 占位文字 又上面的类方法决定
 - (void)becomeFirstResponderWithPlaceString:(NSString *)string;
